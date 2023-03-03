@@ -23,6 +23,8 @@ https://user-images.githubusercontent.com/55923773/222775635-ad7d9d9e-be12-47b9-
 
 ## Deployment
 
+> For any doubts, watch the 2-min walkthrough above.
+
 1. [Create Slack App with Incoming Webhook](https://api.slack.com/messaging/webhooks#:~:text=Incoming%20Webhooks%20are%20a%20simple,make%20the%20messages%20stand%20out). and retrieve a Slack webhook URL like `https://hooks.slack.com/services/<token>`
 2. Create a Lambda function from AWS with ruby template, copy and paste the code from [lambda_function.rb](./lambda_function.rb)
 3. Extract Slack webhook token as an environment_variable named `slack_webhook_token`, for instance it should look similar like `aaa/ccc/bbbb`
